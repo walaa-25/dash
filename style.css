@@ -1,0 +1,144 @@
+*{
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-family: sans-serif;
+}
+body{
+    background-color: #001;
+    display: flex;
+}
+.img_box{
+    width: 50px;
+    height: 50px;flex-shrink: 0;
+
+}
+.img_box img{
+    width: 100%;
+    border-radius: 50%;
+
+    border: 2px solid white;
+    
+}
+.profile{
+    display: flex;
+    gap: 20px;
+    
+}
+.profile h2{
+    text-align: center;
+    text-transform: capitalize;
+    padding-left: 10px;
+    font-size: 33px;
+    
+}
+.menue{
+    background-color:  rgb(12, 103, 179);
+    width: 60px;
+    height: 100vh;
+    padding: 20px;
+    overflow: hidden;
+    transition: .5s;
+}
+.menue:hover{
+    width: 260px;
+}
+.menue ul{
+    list-style: none;
+    position: relative;
+    height: 95%;
+}
+.menue ul li a{
+    text-decoration: none;
+    display: block;
+    
+    padding: 15px ;
+    margin: 10px 0;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    transition: .5s;
+}
+.menue ul li a:hover, .active{
+    background-color: rgba(5, 52, 90, 0.692);
+
+}
+.log_out{
+    position: absolute;
+    bottom: 5%;
+    width: 100%;
+    background-color: rgba(2, 38, 66, 0.692);
+    border-radius: 13px;
+}
+ul li a i{
+    font-size: 30px;
+}
+.content{
+    width: 100%;
+    margin: 10px;
+}
+.title{
+    background-color:  rgba(5, 52, 90, 0.692);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    margin: 10px 0;
+    height: 60px;
+}
+.title i{
+    font-size: 27px;
+    padding-right: 10px;
+}
+.title p{
+    font-size: 23px;
+    text-transform: capitalize;
+    padding-left: 10px;
+}
+.data{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.data .box{
+    background-color:rgb(12, 103, 179);
+    flex-basis: 150px;
+    height: 150px;
+    flex-grow: 1;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    transition: .5s;
+}
+.data .box:hover{
+    background-color: rgba(2, 38, 66, 0.692);
+}
+.data .box i{
+    font-size: 35px;
+}
+.data .box .data2 span{
+    font-size: 30px;
+}
+table{
+    width: 100%;
+    text-align: center;
+    border-spacing: 7px;
+}
+td ,th{
+    background-color:rgb(12, 103, 179) ;
+    border-radius: 8px;
+    padding: 15px;
+    font-size: 20px;
+    transition: .5s;
+}
+th{
+    background-color: rgba(51, 83, 109, 0.397);
+}
+td:hover{
+    background-color: rgba(2, 38, 66, 0.692);
+}
